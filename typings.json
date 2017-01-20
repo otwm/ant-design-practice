@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "debug": "registry:npm/debug#2.0.0+20160723033700",
+    "react": "registry:dt/react#15.0.0+20170111020654"
+  },
+  "globalDependencies": {
+    "antd": "registry:dt/antd#0.12.10+20160714045119",
+    "redux": "registry:dt/redux#3.5.2+20160703092728",
+    "reselect": "registry:dt/reselect#2.0.2+20160510002910"
+  }
+}
