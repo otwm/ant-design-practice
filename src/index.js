@@ -1,12 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import "./index.css";
-import enUS from "antd/lib/locale-provider/en_US";
-import {LocaleProvider} from "antd";
-
-
-ReactDOM.render(
-    <LocaleProvider locale={enUS}><App/></LocaleProvider>,
-    document.getElementById('root')
-);
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./root/index.prod.js');
+} else {
+    module.exports = require('./root/index.dev.js');
+}

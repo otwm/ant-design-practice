@@ -26,3 +26,5 @@ html, body, #root, .rootLayout {
     display: flex;
     flex-direction: column;
 }
+
+a { color: inherit; }
