@@ -1,7 +1,7 @@
 import React from "react";
 import {Route, IndexRedirect} from "react-router";
-import App from "/root/App";
-import PageNotFound from "/root/PageNotFound";
+import App from "/App";
+import PageNotFound from "/PageNotFound";
 import {
     MenuAList
     , MenuAForm

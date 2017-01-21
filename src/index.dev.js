@@ -5,8 +5,8 @@ import enUS from "antd/lib/locale-provider/en_US";
 import {LocaleProvider, BackTop} from "antd";
 import {Provider} from "react-redux";
 import {Router} from "react-router";
-import configureStore from "./core/store";
-import routes from "./core/routes";
+import configureStore from "/core/store";
+import routes from "/core/routes";
 
 const {store, history} = configureStore();
 
