@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Breadcrumb, Form, Icon, Col, Row, Input, Button, Card} from "antd";
+import {Form, Icon, Col, Row, Input, Button, Card} from "antd";
 
 const FormItem = Form.Item;
 const form = Form.create;
@@ -96,47 +96,4 @@ class SearchForm extends Component {
     }
 }
 
-class SearchResult extends Component {
-    render(){
-        return (
-            <Card title="검색">
-
-            </Card>
-        );
-    }
-}
-
-class MenuAList extends Component {
-
-    renderBreadcrumb() {
-        return (
-            <Breadcrumb>
-                <Breadcrumb.Item href="/">
-                    <Icon type="home"/>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item href="/menuA">
-                    <Icon type="user"/>
-                    <span>menu A</span>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    List
-                </Breadcrumb.Item>
-            </Breadcrumb>
-        );
-    }
-
-    render() {
-        return (
-            <div>
-                {this.renderBreadcrumb()}
-                <h1>
-                    Menu A
-                </h1>
-                <SearchForm/>
-                <SearchResult/>
-            </div>
-        );
-    }
-}
-
-export default MenuAList;
+export default SearchForm;
