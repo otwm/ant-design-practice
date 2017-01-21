@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Breadcrumb, Icon} from "antd";
 import SearchForm from "./SearchForm";
 import SearchResult from "./SearchResult";
-
 class MenuAList extends Component {
 
     renderBreadcrumb() {

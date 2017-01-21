@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Col, Row, Button, Table, Card} from "antd";
+import {Link} from 'react-router';
 
 const ButtonGroup = Button.Group;
 
@@ -44,10 +45,6 @@ class SearchResult extends Component {
 
     }
 
-    handleRegister() {
-
-    }
-
     render() {
         const totalCount = 10;
         return (
@@ -65,12 +62,13 @@ class SearchResult extends Component {
                         </ButtonGroup>
                     </Col>
                     <Col span={12} style={{textAlign: 'right'}}>
-                        <Button type="primary" onClick={::this.handleRegister}>등록</Button>
+                        <Button type="primary">
+                            <Link to="/menuA/form">등록</Link>
+                        </Button>
                     </Col>
                 </Row>
                 <br/>
                 <Table columns={columns} dataSource={data} rowSelection={rowSelection}>
-
                 </Table>
             </Card>
         );
