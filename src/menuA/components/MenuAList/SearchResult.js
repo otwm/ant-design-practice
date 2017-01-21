@@ -48,7 +48,7 @@ class SearchResult extends Component {
     render() {
         const totalCount = 10;
         return (
-            <Card title={`총 ${totalCount}건`}>
+            <Card title={`총 ${totalCount}건`} className="panel">
                 <Row>
                     <Col span={12} style={{textAlign: 'left'}}>
                         <Button style={{marginLeft: 8}} onClick={::this.handleDelete}

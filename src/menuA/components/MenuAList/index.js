@@ -22,15 +22,14 @@ class MenuAList extends Component {
     }
 
     render() {
-        const rowGutter = 40;
         return (
             <div className="contentRoot">
                 {this.renderBreadcrumb()}
-                <h1>
+                <h1 className="panel">
                     Menu A
                 </h1>
-                <SearchForm/>
-                <SearchResult/>
+                <SearchForm />
+                <SearchResult />
             </div>
         );
     }

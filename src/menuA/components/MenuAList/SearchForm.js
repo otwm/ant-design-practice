@@ -41,7 +41,7 @@ class SearchForm extends Component {
             Collapse <Icon type={expand ? 'up' : 'down'}/>
         </a>);
         return (
-            <Card title="검색" extra={collapse}>
+            <Card title="검색" extra={collapse} className="panel">
                 <Form
                     className="ant-advanced-search-form"
                     onSubmit={::this.handleSearch}
